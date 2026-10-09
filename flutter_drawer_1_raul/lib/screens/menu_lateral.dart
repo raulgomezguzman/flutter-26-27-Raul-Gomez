@@ -4,6 +4,10 @@ import '../widgets/enlace1.dart';
 import '../widgets/enlace2.dart';
 import '../widgets/enlace3.dart';
 import '../widgets/enlace4.dart';
+import '../widgets/enlace5.dart';
+import '../widgets/enlace6.dart';
+import '../widgets/enlace7.dart';
+import '../widgets/enlace8.dart';
 
 class MenuLateral extends StatelessWidget {
   const MenuLateral({super.key});
@@ -14,11 +18,9 @@ class MenuLateral extends StatelessWidget {
       child: ListView(
         children: <Widget>[
           Ink(
-            color: Colors.indigo,
             child: ListTile(
               title: const Text(
                 "Foto con Nombre",
-                style: TextStyle(color: Colors.white),
               ),
               onTap: () {
                 Navigator.of(context).pop();
@@ -59,6 +61,50 @@ class MenuLateral extends StatelessWidget {
               Navigator.of(context).push(
                 MaterialPageRoute(
                   builder: (BuildContext context) => const Enlace4(),
+                ),
+              );
+            },
+          ),
+          ListTile(
+            title: const Text("Pantalla dividida en 3 con texto"),
+            onTap: () {
+              Navigator.of(context).pop();
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (BuildContext context) => const Enlace5(),
+                ),
+              );
+            },
+          ),
+          ListTile(
+            title: const Text("3 imágenes repetidas"),
+            onTap: () {
+              Navigator.of(context).pop();
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (BuildContext context) => const Enlace6(),
+                ),
+              );
+            },
+          ),
+          ListTile(
+            title: const Text("Diseño responsive"),
+            onTap: () {
+              Navigator.of(context).pop();
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (BuildContext context) => const Enlace7(),
+                ),
+              );
+            },
+          ),
+          ListTile(
+            title: const Text("Reto Container"),
+            onTap: () {
+              Navigator.of(context).pop();
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (BuildContext context) => const Enlace8(),
                 ),
               );
             },
