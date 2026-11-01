@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
-import 'enlace1.dart';
-import 'enlace2.dart';
-import 'enlace3.dart';
-import 'enlace4.dart';
-import 'enlace5.dart';
-import 'enlace6.dart';
-import 'enlace7.dart';
-import 'enlace8.dart';
-import 'enlace9.dart';
+import 'enlaceFotoConNombre.dart';
+import 'enlaceColumnaFotos.dart';
+import 'enlaceIconos.dart';
+import 'enlace5fotos.dart';
+import 'enlace3Textos.dart';
+import 'enlace3Imagenes.dart';
+import 'enlacePiramide.dart';
+import 'enlaceReto.dart';
+import 'enlaceContador.dart';
 import 'perfil_instagram.dart';
 
 class MenuLateral extends StatelessWidget {
@@ -115,8 +115,7 @@ class MenuLateral extends StatelessWidget {
               Navigator.of(context).pop();
               Navigator.of(context).push(
                 MaterialPageRoute(
-                  builder: (BuildContext context) =>
-                      const Enlace9(drawer: MenuLateral()),
+                  builder: (BuildContext context) => const Enlace9(),
                 ),
               );
             },
@@ -127,8 +126,7 @@ class MenuLateral extends StatelessWidget {
               Navigator.of(context).pop();
               Navigator.of(context).push(
                 MaterialPageRoute(
-                  builder: (BuildContext context) => 
-                  const PerfilInstagram(),
+                  builder: (BuildContext context) => const PerfilInstagram(),
                 ),
               );
             },

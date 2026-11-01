@@ -1,20 +1,17 @@
 import 'package:flutter/material.dart';
 
 class Enlace9 extends StatelessWidget {
-  const Enlace9({super.key, this.drawer});
-
-  final Widget? drawer;
+  const Enlace9({super.key});
 
   @override
   Widget build(BuildContext context) =>
-      MiClase(title: 'Contador personal', drawer: drawer);
+      const MiClase(title: 'Contador personal');
 }
 
 class MiClase extends StatefulWidget {
-  const MiClase({super.key, required this.title, this.drawer});
+  const MiClase({super.key, required this.title});
 
   final String title;
-  final Widget? drawer;
 
   @override
   State<MiClase> createState() => _MiClase();
@@ -45,7 +42,6 @@ class _MiClase extends State<MiClase> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text(widget.title)),
-      drawer: widget.drawer,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
