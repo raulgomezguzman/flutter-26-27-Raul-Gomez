@@ -7,6 +7,12 @@ class CuadriculaFotos extends StatelessWidget {
     'assets/images/post1.png',
     'assets/images/post2.png',
     'assets/images/post3.png',
+    'assets/images/post2.png',
+    'assets/images/post1.png',
+    'assets/images/post3.png',
+    'assets/images/post3.png',
+    'assets/images/post2.png',
+    'assets/images/post1.png',
   ];
 
   @override
